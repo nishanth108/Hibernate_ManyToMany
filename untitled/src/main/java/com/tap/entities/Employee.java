@@ -27,11 +27,11 @@ public class Employee {
         System.out.print("We are in the Employee Class");
     }
 
-    public Employee(int id, String name, String email, List<Project> projects) {
+    public Employee(int id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.projects = projects;
+
     }
 
     public int getId() {
@@ -56,5 +56,23 @@ public class Employee {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public List<Project> getProjects() {
+        return projects;
+    }
+
+    public void setProjects(List<Project> projects) {
+        this.projects = projects;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", projects=" + projects +
+                '}';
     }
 }
