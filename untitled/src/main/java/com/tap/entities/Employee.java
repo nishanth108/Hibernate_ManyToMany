@@ -72,7 +72,6 @@ public class Employee {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", projects=" + projects +
                 '}';
     }
 }

@@ -10,6 +10,6 @@
         <property name="connection.password">nishanth@18</property>
         <property name="hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
-        <mapping class="com.xworkz.entities.User"/>
+<!--        <mapping class="com.xworkz.entities.User"/>-->
     </session-factory>
 </hibernate-configuration>

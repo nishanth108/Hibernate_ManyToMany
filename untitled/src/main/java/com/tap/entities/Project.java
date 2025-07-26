@@ -21,6 +21,9 @@ public class Project {
     )
     private List<Employee> employee;
 
+    public Project() {
+        System.out.print("We are in the Project Class");
+    }
 
     public int getId() {
         return id;
@@ -56,7 +59,7 @@ public class Project {
         return "Project{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", employee=" + employee +
+
                 '}';
     }
 }

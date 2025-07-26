@@ -57,7 +57,12 @@ public class ManyTOMany {
             session.persist(pr);
             session.persist(af);
             transaction.commit();
-        } finally {
+        } catch (Exception e) {
+            System.err.println("❌ Exception occurred:");
+            e.printStackTrace();
+
+
+        }finally {
             session.close();
             sessionFactory.close();
         }
