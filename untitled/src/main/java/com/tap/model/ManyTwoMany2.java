@@ -30,19 +30,24 @@ public class ManyTwoMany2 {
             Transaction transaction = session.beginTransaction();
 
 //            Curd Operation
-//            Employee employee=session.byId(Employee.class).load(2);
+            Employee employee=session.byId(Employee.class).load(2);
 //            List<Project> projects=employee.getProjects();
 
-            Project project = session.byId(Project.class).load(1);
-             List<Employee> employee =project.getEmployee();
+//         Project project = session.byId(Project.class).load(1);
+//            List<Employee> employee =project.getEmployee();
 
-            System.out.println(project);
-            for(Employee p:employee) {
-                System.out.print(p);
-            }
+//            System.out.println(project);
+//            for(Employee p:employee) {
+//                System.out.print(p);
+//            }
 
 
-transaction.commit();
+                session.remove(employee);
+
+
+                transaction.commit();
+
+
         } catch (Exception e) {
             System.out.print("Exception Is Occured");
             e.printStackTrace();
